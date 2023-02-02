@@ -1,4 +1,0 @@
-class Espectador {
-    nome!: string;
-    
-}
