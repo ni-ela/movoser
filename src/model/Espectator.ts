@@ -1,0 +1,4 @@
+class Espectador {
+    nome!: string;
+    
+}
