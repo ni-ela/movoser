@@ -1,3 +1,5 @@
+import { ConteudoSobDemanda, Espectador } from "./index";
+
 export class Avaliacao {
     descricao!: string;
 	estrelas!: number;
@@ -12,4 +14,6 @@ export class Avaliacao {
     atuacao!: number;
     figurino!: number;
     parametro!: number;
+    Espectador!: Espectador;
+    ConteudoSobDemanda!: ConteudoSobDemanda;
 }

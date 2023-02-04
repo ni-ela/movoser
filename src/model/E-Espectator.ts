@@ -1,3 +1,5 @@
+import { Preferencia } from "./index";
+
 export class Espectador {
     nome!: string;
     idade!: number;
@@ -5,6 +7,7 @@ export class Espectador {
     token!: string;
     androidClientId: number | undefined;
     iosClientId: number | undefined;
+    Preferencia!: Preferencia;
 
     constructor(nome:string) {
         this.nome = nome;
