@@ -1,0 +1,25 @@
+version: '3.8'
+services:
+    movoser:
+        build: 
+            context: .
+        tty: true
+        ports:
+            - '19006:19006'
+        volumes:
+            - ./frontend:/opt/movoser/app:delegated
+            - ./frontend/package.json:/opt/movoser/package.json
+            - ./frontend/package-lock.json:/opt/movoser/package-lock.json
+            - notused:/opt/movoser/app/node_modules
+        healthcheck: 
+            disable: true
+
+    backend: 
+        build: ./backend
+        ports: 
+            - '8000:8000'
+        volumes:
+            - ./backend:/usr/src/app:delegated
+            - ./backend/package.json:/usr/src/app/package.json
+            - ./backend/package-lock.json:/usr/src/app/package-lock.json
+            - notused:/usr/src/app/node_modules
