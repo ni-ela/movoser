@@ -1,7 +1,11 @@
 import { StatusBar } from 'expo-status-bar';
 import { Button, Image, StyleSheet, Text, View } from 'react-native';
+import { useFonts } from 'expo-font';
 
 export default function Logon({navigation}: {navigation: any}) {
+  const [fonte]= useFonts({
+    'Gothic': require("./assets/fonts/GothicA1-Regular.ttf")
+  });
   return (
     <View style={styles.container}>
       <Image
@@ -33,6 +37,7 @@ const styles = StyleSheet.create({
     backgroundColor: '#fff',
     alignItems: 'center',
     justifyContent: 'center',
+    fontFamily: 'GothicA1',
   },
   statusBar: {
     color: '#841584'

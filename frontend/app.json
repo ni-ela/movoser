@@ -7,8 +7,8 @@
     "icon": "./assets/logo.png",
     "userInterfaceStyle": "light",
     "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
+      "image": "./assets/splash.gif",
+      "resizeMode": "cover",
       "backgroundColor": "#ffffff"
     },
     "updates": {
@@ -26,7 +26,8 @@
     "main": "App.tsx",
     "proxy": "https://localhost:8000",
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "bundleIdentifier": "com.anonymous.movoser"
     },
     "android": {
       "adaptiveIcon": {

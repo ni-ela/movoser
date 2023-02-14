@@ -1,6 +1,6 @@
-import Logon from './LoggedOut/F01-Logon';
-import Signup from './LoggedOut/F02-Signup';
-import Splash from './LoggedOut/Splash';
+import Logon from './LoggedOut/F-Logon';
+import Signup from './LoggedOut/F-Cadastro';
+import Splash from './LoggedOut/F-Splash';
 
 export { 
     Logon, 
